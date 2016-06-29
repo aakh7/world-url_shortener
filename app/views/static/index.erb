@@ -1,21 +1,27 @@
+<h1> </h1>
+
 <form action="/form" method="post">
 	Enter URL:
 	<input type ="text" name="long_url">
 	<input type ="submit" name="Submit">
 </form>
-
+<%= @error if @error%>
 <table style="width:100%">
 	<tr>
 		<th>Long URL</th>
 		<th>Shortened URL</th>
+		<th>Click Count</th>
 	</tr>
-	<% Url.all.each do |url| %>
+	<% @urls.each do |url| %>
 	<tr>
 		<td><a href="<%=url.shortened_url%>"><%= url.long_url%></a></td>
 		<td><a href="<%=url.shortened_url%>"><%=url.shortened_url%> </a></td>
+		<td><%=url.click_count%></td>
 	</tr>
 <% end %>
 </table>
+
+
 
 
 

@@ -8,6 +8,7 @@ require 'rubygems'
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 require 'pathname'
 
+
 	# database
 require 'pg'
 require 'active_record'
@@ -16,6 +17,7 @@ require 'logger'
 	# sinatra
 require 'sinatra'
 require "sinatra/reloader" if development?
+require 'byebug'
 
 	# embedded ruby
 require 'erb'
