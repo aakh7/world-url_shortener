@@ -1,22 +1,31 @@
-<h1> </h1>
 
-<form action="/form" method="post">
-	Enter URL:
-	<input type ="text" name="long_url">
-	<input type ="submit" name="Submit">
-</form>
+
+<div class="top">
+<h1 class="container" style="text-align:center"> <strong> World URL Shortener L) </strong> </h1>
+
+<img class="fishy" src="http://www.activeendurance.com/blog/wp-content/uploads/2013/06/bitly.png" alt="bitly" align="middle" style="width:168px;height:168px;">
+
 <%= @error if @error%>
-<table style="width:100%">
+<form action="/form" method="post"> <h3> <b> <i>
+	<font face="comic, sans serif"> Enter URL: </font>
+	<input id="shorten_url" taborder="1" type ="text" name="long_url" class="shorten-input" placeholder="www.google.com">
+	<input id="shorten_button" type ="submit" class="button button-primary button-large shorten-button" name="Submit" value="Shorten URL">
+</i> </b>
+</h6>
+</form>
+</div>
+
+<table style="width:60%; background-color:lightgrey;" class="bordered" align="center">
 	<tr>
-		<th>Long URL</th>
+		<th>URL</th>
 		<th>Shortened URL</th>
 		<th>Click Count</th>
 	</tr>
 	<% @urls.each do |url| %>
 	<tr>
-		<td><a href="<%=url.shortened_url%>"><%= url.long_url%></a></td>
-		<td><a href="<%=url.shortened_url%>"><%=url.shortened_url%> </a></td>
-		<td><%=url.click_count%></td>
+		<td id="nice_margin"><a href="<%=url.shortened_url%>"><%= url.long_url%></a></td>
+		<td id="center_align"><a href="<%=url.shortened_url%>"><%=url.shortened_url%> </a></td>
+		<td id="center_align"><%=url.click_count%></td>
 	</tr>
 <% end %>
 </table>

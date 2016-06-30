@@ -1,0 +1,91 @@
+.top {
+	background-color: hsla(150, 70%, 50%, 0.7)
+}
+
+
+body {
+	background-image: url("http://quotesideas.com/wp-content/uploads/2015/02/Memories-quote-with-travel-background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+h1 {
+	color: blue;
+}
+
+
+table, th, td {
+	border: #000000 1px solid;
+	border-color: black;
+	float: center;
+	table-layout: auto|fixed;
+	background-color: hsla(210, 20%, 80%, 0.2);
+	opacity: 0.8;
+
+
+}
+
+form {
+	text-align: center;
+}
+
+.fishy {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+.container {
+}
+
+:-moz-placeholder{
+	color: green;
+}
+
+.shorten-input, .input-tall {
+    width: 30%;
+    height: 45px;
+    padding: 14.4px 23px;
+    font-family: proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: #7f898e;
+    line-height: 32px;
+    border-radius: 3px;
+    border-width: 0;
+    box-shadow: 0 0 0 1px #fff;
+    -webkit-appearance: none;
+}
+
+button, input, select, textarea {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.button.button-large.shorten-button {
+    border-radius: 0 3px 3px 0
+    float: right;
+
+}
+.button.button-primary:hover {
+    background-color: #e45212;
+}
+.button.button-large {
+    height: 50px;
+    padding: 15px 18px;
+}
+.button.button-primary {
+    color: #fff;
+    background-color: #ee6123;
+}
+
+#nice_margin {
+
+	margin-left: 1cm;
+}
+#center_align {
+
+	text-align: center
+}
